@@ -1,5 +1,6 @@
 package com.example.kazuemasaki.myomikujiapp;
 
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -31,6 +32,12 @@ public class MainActivity extends ActionBarActivity {
         int num = randomGenerator.nextInt(results.length); // 0-2
         //結果の表示
         //String result = Integer.toString(num);
+
+        if (num == 0){
+            tv.setTextColor(Color.RED);
+        } else {
+            tv.setTextColor(Color.rgb(0, 0, 0));
+        }
         tv.setText(results[num]);
     }
 
