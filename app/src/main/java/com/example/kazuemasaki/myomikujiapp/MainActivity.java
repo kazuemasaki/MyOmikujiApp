@@ -33,7 +33,7 @@ public class MainActivity extends ActionBarActivity {
         //結果の表示
         //String result = Integer.toString(num);
 
-        if (num == 0){
+        if (num == 0) {
             tv.setTextColor(Color.RED);
         } else {
             tv.setTextColor(Color.rgb(0, 0, 0));
